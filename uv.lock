@@ -1,10 +1,35 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.12, <4.0"
 resolution-markers = [
     "python_full_version >= '3.14'",
     "python_full_version == '3.13.*'",
     "python_full_version < '3.13'",
+]
+
+[manifest]
+members = [
+    "agentic-langgraph",
+    "langchain-project",
+]
+
+[[package]]
+name = "agentic-langgraph"
+version = "0.1.0"
+source = { editable = "agentic_langgraph" }
+dependencies = [
+    { name = "ipykernel" },
+    { name = "langchain" },
+    { name = "langgraph" },
+    { name = "langsmith" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ipykernel", specifier = ">=7.4.0" },
+    { name = "langchain", specifier = ">=1.4.3" },
+    { name = "langgraph", specifier = ">=1.2.12" },
+    { name = "langsmith", specifier = ">=0.14.4" },
 ]
 
 [[package]]
