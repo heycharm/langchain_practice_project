@@ -27,4 +27,5 @@ build-backend = "uv_build"
 [tool.uv.workspace]
 members = [
     "agentic_langgraph",
+    "mcplangchaindemo",
 ]
