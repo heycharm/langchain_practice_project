@@ -29,4 +29,5 @@ members = [
     "agentic_langgraph",
     "mcplangchaindemo",
     "ragpractice",
+    "deepagent",
 ]
